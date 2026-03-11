@@ -24,7 +24,11 @@ class Settings(BaseSettings):
     JSEARCH_BASE_URL: str = "https://jsearch.p.rapidapi.com"
 
     # CORS
-    ALLOWED_ORIGINS: List[str] = ["http://localhost:3000", "http://localhost:5173"]
+    ALLOWED_ORIGINS: List[str] = [
+        "http://localhost:3000",
+        "http://localhost:5173",
+        "https://perceptive-education-production.up.railway.app"
+    ]
 
     model_config = {"env_file": ".env", "extra": "ignore"}
 
